@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 15pt;
+}
+
+.font-override {
+    font-family: 'Raleway', sans-serif;
+    background-color: #142e51;
+    color: #f4f9ff;
+}
+
+#name {
+    font-size: 2em !important;
+    padding: 10px;
+    margin-bottom: 0 !important;
+}
+
+div.project-image {
+    height: 100vh;
+}
+
+div.project-image img {
+    padding: 50px;
+} 
+
+div.first-project-image {
+    background-image: url("../images/project1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+footer {
+    text-align: center;
+}
+
+a.social-icons {
+    margin: 20px;
+}
+
+nav li{
+    margin: 0 20px;
+    font-size: 1.5rem; 
+}
+
+.nav-color-override:link, .nav-color-override:visited {
+    color: #aaa !important;
+}
+
+.nav-color-override:focus, .nav-color-override:hover, .nav-color-override:active {
+    color: #65848d !important;
+    transition: color 0.3s;
+}
+
+#profile {
+    grid-area: profile;
+    text-align: center;
+    height: 90vh;
+    padding-top: 10vh;
+    background-color: #7491be;
+    background: url('../images/blue-skies-background.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#profile img {
+    width: 15vw;
+    border: 0.8vw solid #fffc;
+    border-radius: 50%;
+    margin: 2em;
+}
+
+#profile h1 {
+    text-transform: none;
+    font-size: 2.5em;
+    width: 40vw;
+    margin: auto;
+}
+
+#aboutme {
+    background-color: #65848d;
+}
+
+#aboutme p {
+    width: 60vw;
+    margin: auto;
+    font-size: 1.5rem;
+}
+
+footer {
+    position: relative;
+    height: 15vh;
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 20px;
+}
+
+@media screen and (max-width: 1600px) {
+    html {
+        font-size: 10pt;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    nav {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    header h1 {
+        float: none;
+        margin: 20px;
+    }
+    nav {
+        width: 100%;
+    }
+    #profile {
+        padding-top: 30vh;
+    }
+    #profile img {
+        width: 35vw;
+    }
+    #profile h1 {
+        width: 80vw;
+        margin: auto;
+    }
+    #projects, #aboutme, #contact {
+        padding-top: 15vh;
+    }
+    #aboutme {
+        padding: 0;
+    }
+}
