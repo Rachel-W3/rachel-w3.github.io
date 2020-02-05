@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    /* box-sizing: border-box; */
 }
 
 html {
@@ -22,10 +23,6 @@ html {
 div.project-image {
     height: 100vh;
 }
-
-div.project-image img {
-    padding: 50px;
-} 
 
 div.first-project-image {
     background-image: url("../images/project1.jpg");
@@ -58,8 +55,8 @@ nav li{
 #profile {
     grid-area: profile;
     text-align: center;
-    height: 90vh;
-    padding-top: 10vh;
+    height: 95vh;
+    padding-top: 15vh;
     background-color: #7491be;
     background: url('../images/blue-skies-background.jpg') no-repeat center center;
     background-size: cover;
@@ -84,17 +81,14 @@ nav li{
 }
 
 #aboutme p {
-    width: 60vw;
-    margin: auto;
+    padding: 20px 5vw;
     font-size: 1.5rem;
 }
 
 footer {
-    position: relative;
-    height: 15vh;
+    /* position: relative; */
     text-align: center;
     font-size: 1.3rem;
-    box-sizing: border-box;
 }
 
 @media screen and (max-width: 1600px) {
