@@ -104,7 +104,7 @@ nav li{
 footer {
     text-align: center;
     font-size: 1.3rem;
-    padding: 50px;
+    padding: 40px 0px 20px 0px;
 }
 
 footer p {
@@ -207,12 +207,6 @@ footer p {
     }
 }
 
-@media screen and (max-width: 1200px) {
-    nav {
-        width: 45%;
-    }
-}
-
 @media screen and (max-width: 800px) {
     header h1 {
         float: none;
@@ -253,6 +247,6 @@ footer p {
         padding: 0;
     }
     footer {
-        padding: 20px 10px;
+        padding: 45px 10px 20px 10px;
     }
 }
