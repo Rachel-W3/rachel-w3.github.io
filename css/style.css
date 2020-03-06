@@ -46,7 +46,8 @@ html {
 }
 
 .col-12 {
-    padding: 0px 30px;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
 }
 
 footer {
@@ -263,6 +264,6 @@ footer p {
         padding: 45px 10px 20px 10px;
     }
     .col-12 {
-        padding: 0px 15px;
+        padding: 0px 2%;
     }
 }
