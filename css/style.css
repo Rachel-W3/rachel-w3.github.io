@@ -32,28 +32,22 @@ html {
     padding-bottom: 20px;
 }
 
-#proj-gallery {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-}
-
 .preview img {
     width: 25vw;
+    margin-bottom: 30px;
 }
 
 .preview h2 {
     margin: 20px 0px;
 }
-/* div.project-image {
-    height: 100vh;
+
+.mb-2 {
+    margin-bottom: -3em !important;
 }
 
-div.first-project-image {
-    background-image: url("../images/project1.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-} */
+.col-12 {
+    padding: 0px 30px;
+}
 
 footer {
     text-align: center;
@@ -101,6 +95,12 @@ nav li{
     margin: auto;
 }
 
+#profile p {
+    font-size: 1.5em;
+    width: 90vw;
+    margin: auto;
+}
+
 #aboutme {
     background-color: #65848d;
 }
@@ -111,7 +111,6 @@ nav li{
 }
 
 footer {
-    /* position: relative; */
     text-align: center;
     font-size: 1.3rem;
     padding: 50px;
@@ -138,9 +137,9 @@ footer p {
     position: relative;
     text-align: center;
     cursor: default;
-  }
+}
   
-  .hovereffect .overlay {
+.hovereffect .overlay {
     position: absolute;
     overflow: hidden;
     width: 80%;
@@ -154,30 +153,30 @@ footer p {
     -webkit-transform: scale(0,1);
     -ms-transform: scale(0,1);
     transform: scale(0,1);
-  }
+}
   
-  .hovereffect:hover .overlay {
+.hovereffect:hover .overlay {
     opacity: 1;
     filter: alpha(opacity=100);
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
-  }
+}
   
-  .hovereffect img {
+.hovereffect img {
     display: block;
     position: relative;
     -webkit-transition: all 0.35s;
     transition: all 0.35s;
-  }
+}
   
-  .hovereffect:hover img {
+.hovereffect:hover img {
     filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
     filter: brightness(0.6);
     -webkit-filter: brightness(0.6);
-  }
+}
   
-  .hovereffect h2 {
+.hovereffect h2 {
     text-transform: uppercase;
     text-align: center;
     position: relative;
@@ -191,9 +190,9 @@ footer p {
     transition: opacity 0.35s, transform 0.35s;
     -webkit-transform: translate3d(0,-100%,0);
     transform: translate3d(0,-100%,0);
-  }
+}
   
-  .hovereffect a, .hovereffect p {
+.hovereffect a, .hovereffect p {
     color: #FFF;
     padding: 1em 0;
     opacity: 0;
@@ -202,24 +201,18 @@ footer p {
     transition: opacity 0.35s, transform 0.35s;
     -webkit-transform: translate3d(0,100%,0);
     transform: translate3d(0,100%,0);
-  }
+}
   
-  .hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h2 {
+.hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h2 {
     opacity: 1;
     filter: alpha(opacity=100);
     -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
-  }
+}
 
 @media screen and (max-width: 1600px) {
     html {
         font-size: 10pt;
-    }
-}
-
-@media screen and (max-width: 1200px) {
-    nav {
-        width: 45%;
     }
 }
 
@@ -263,5 +256,8 @@ footer p {
     }
     footer {
         padding: 20px 10px;
+    }
+    .col-12 {
+        padding: 0px 15px;
     }
 }

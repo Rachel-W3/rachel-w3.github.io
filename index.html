@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://use.fontawesome.com/releases/v5.12.0/js/all.js" data-auto-a11y="true"></script>
+    <!-- <link rel="stylesheet" href="https://mdbootstrap.com/api/snippets/static/download/MDB-Pro_4.14.0/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://mdbootstrap.com/api/snippets/static/download/MDB-Pro_4.14.0/css/mdb.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/css/mdb-plugins-gathered.min.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <script src="js/script.js"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Rachel Wong's Portfolio</title>
 </head>
@@ -35,13 +39,225 @@
         </nav>
     
         <div id="profile">
+            <h1><b>Game Designer and Developer</b></h1>
             <img src="images/personal-logo.png" alt="Personal Logo">
-            <h1><b>Rachel of House&nbspWong,<br>Designer of Webs</b></h1>
+            <p><i>Available for co-ops or internships for Summer 2020!</i></p>
         </div>
 
         <div id="projects">
             <h1><b>Projects</b></h1>
-            <section id="proj-gallery">
+            <div id="carousel-example-multi" class="carousel slide carousel-multi-item v-2">
+
+                <!--Controls-->
+                <div class="controls-top">
+                    <a class="btn-floating waves-effect waves-light" href="#carousel-example-multi" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
+                    <a class="btn-floating waves-effect waves-light" href="#carousel-example-multi" data-slide="next"><i class="fas fa-chevron-right"></i></a>
+                </div>
+                <!--/.Controls-->
+              
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-multi" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-multi" data-slide-to="1" class=""></li>
+                    <li data-target="#carousel-example-multi" data-slide-to="2" class=""></li>
+                    <li data-target="#carousel-example-multi" data-slide-to="3" class=""></li>
+                </ol>
+                <!--/.Indicators-->
+              
+                <div class="carousel-inner v-2" role="listbox">
+              
+                    <div class="carousel-item active">
+                        <div class="col-12 col-md-4">
+                            <div class="card mb-2 preview hovereffect">
+                                <img class="img-responsive" src="images/project1.jpg" alt="Isles of Lost Children">
+                                <div class="overlay">
+                                    <h2>Isles of Lost Children<br>(PC Only)</h2>
+                                    <p>
+                                        <a href="https://rachel-w3.github.io/Isles-of-Lost-Children/" target="_blank">LINK HERE</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card mb-2 preview hovereffect">
+                                <img class="img-responsive" src="images/project2.jpg" alt="The VGTavern">
+                                <div class="overlay">
+                                    <h2>The VGTavern</h2>
+                                    <p>
+                                        <a href="https://people.rit.edu/rw7363/TheVGTavern/" target="_blank">LINK HERE</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card mb-2 preview hovereffect">
+                                <img class="img-responsive" src="images/project3.jpg" alt="Fallen Angel">
+                                    <div class="overlay">
+                                        <h2>Fallen Angel<br>(PC Only)</h2>
+                                        <p>
+                                            <a href="https://people.rit.edu/rw7363/FallenAngel/" target="_blank">LINK HERE</a>
+                                        </p>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card mb-2 preview hovereffect">
+                                <img class="img-responsive" src="images/project4.jpg" alt="The Show Must Go On">
+                                <div class="overlay">
+                                    <h2>The Show Must Go On<br>(PC Only)</h2>
+                                    <p>
+                                        <a href="https://rachel-w3.github.io/Global-Game-Jam-2020/" target="_blank">LINK HERE</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="col-12 col-md-4">
+                            <div class="card mb-2 preview hovereffect">
+                                <img class="img-responsive" src="images/project2.jpg" alt="The VGTavern">
+                                <div class="overlay">
+                                    <h2>The VGTavern</h2>
+                                    <p>
+                                        <a href="https://people.rit.edu/rw7363/TheVGTavern/" target="_blank">LINK HERE</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card mb-2 preview hovereffect">
+                                <img class="img-responsive" src="images/project3.jpg" alt="Fallen Angel">
+                                <div class="overlay">
+                                    <h2>Fallen Angel<br>(PC Only)</h2>
+                                    <p>
+                                        <a href="https://people.rit.edu/rw7363/FallenAngel/" target="_blank">LINK HERE</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card mb-2 preview hovereffect">
+                                <img class="img-responsive" src="images/project4.jpg" alt="The Show Must Go On">
+                                <div class="overlay">
+                                    <h2>The Show Must Go On<br>(PC Only)</h2>
+                                    <p>
+                                        <a href="https://rachel-w3.github.io/Global-Game-Jam-2020/" target="_blank">LINK HERE</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card mb-2 preview hovereffect">
+                                <img class="img-responsive" src="images/project1.jpg" alt="Isles of Lost Children">
+                                <div class="overlay">
+                                    <h2>Isles of Lost Children<br>(PC Only)</h2>
+                                    <p>
+                                        <a href="https://rachel-w3.github.io/Isles-of-Lost-Children/" target="_blank">LINK HERE</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        
+                    <div class="carousel-item">
+                        <div class="col-12 col-md-4">
+                            <div class="card mb-2 preview hovereffect">
+                                <img class="img-responsive" src="images/project3.jpg" alt="Fallen Angel">
+                                <div class="overlay">
+                                    <h2>Fallen Angel<br>(PC Only)</h2>
+                                    <p>
+                                        <a href="https://people.rit.edu/rw7363/FallenAngel/" target="_blank">LINK HERE</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card mb-2 preview hovereffect">
+                                <img class="img-responsive" src="images/project4.jpg" alt="The Show Must Go On">
+                                <div class="overlay">
+                                    <h2>The Show Must Go On<br>(PC Only)</h2>
+                                    <p>
+                                        <a href="https://rachel-w3.github.io/Global-Game-Jam-2020/" target="_blank">LINK HERE</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card mb-2 preview hovereffect">
+                                <img class="img-responsive" src="images/project1.jpg" alt="Isles of Lost Children">
+                                <div class="overlay">
+                                    <h2>Isles of Lost Children<br>(PC Only)</h2>
+                                    <p>
+                                        <a href="https://rachel-w3.github.io/Isles-of-Lost-Children/" target="_blank">LINK HERE</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card mb-2 preview hovereffect">
+                                <img class="img-responsive" src="images/project2.jpg" alt="The VGTavern">
+                                <div class="overlay">
+                                    <h2>The VGTavern</h2>
+                                    <p>
+                                        <a href="https://people.rit.edu/rw7363/TheVGTavern/" target="_blank">LINK HERE</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="col-12 col-md-4">
+                            <div class="card mb-2 preview hovereffect">
+                                <img class="img-responsive" src="images/project4.jpg" alt="The Show Must Go On">
+                                <div class="overlay">
+                                    <h2>The Show Must Go On<br>(PC Only)</h2>
+                                    <p>
+                                        <a href="https://rachel-w3.github.io/Global-Game-Jam-2020/" target="_blank">LINK HERE</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card mb-2 preview hovereffect">
+                                <img class="img-responsive" src="images/project1.jpg" alt="Isles of Lost Children">
+                                <div class="overlay">
+                                    <h2>Isles of Lost Children<br>(PC Only)</h2>
+                                    <p>
+                                        <a href="https://rachel-w3.github.io/Isles-of-Lost-Children/" target="_blank">LINK HERE</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card mb-2 preview hovereffect">
+                                <img class="img-responsive" src="images/project2.jpg" alt="The VGTavern">
+                                <div class="overlay">
+                                    <h2>The VGTavern</h2>
+                                    <p>
+                                        <a href="https://people.rit.edu/rw7363/TheVGTavern/" target="_blank">LINK HERE</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card mb-2 preview hovereffect">
+                                <img class="img-responsive" src="images/project3.jpg" alt="Fallen Angel">
+                                <div class="overlay">
+                                    <h2>Fallen Angel<br>(PC Only)</h2>
+                                    <p>
+                                        <a href="https://people.rit.edu/rw7363/FallenAngel/" target="_blank">LINK HERE</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+              
+            </div>
+            <!-- <section id="proj-gallery">
                 <div class="preview hovereffect">
                     <img class="img-responsive" src="images/project2.jpg" alt="The VGTavern">
                     <div class="overlay">
@@ -56,7 +272,7 @@
                     <div class="overlay">
                         <h2>Isles of Lost Children</h2>
                         <p>
-                            <a href="https://rachel-w3.github.io/Isles-of-Lost-Children/">LINK HERE</a>
+                            <a href="https://rachel-w3.github.io/Isles-of-Lost-Children/" target="_blank">LINK HERE</a>
                         </p>
                     </div>
                 </div>
@@ -69,7 +285,16 @@
                         </p>
                     </div>
                 </div>
-            </section>
+                <div class="preview hovereffect">
+                    <img class="img-responsive" src="images/project4.jpg" alt="The Show Must Go On">
+                    <div class="overlay">
+                        <h2>The Show Must Go On<br>(PC Only)</h2>
+                        <p>
+                            <a href="https://rachel-w3.github.io/Global-Game-Jam-2020/" target="_blank">LINK HERE</a>
+                        </p>
+                    </div>
+                </div>
+            </section> -->
         </div>
     
         <footer>
