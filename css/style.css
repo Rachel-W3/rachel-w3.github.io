@@ -101,13 +101,17 @@ nav li{
     margin: auto;
 }
 
-#aboutme {
-    background-color: #65848d;
+.carousel-control-prev, .carousel-control-next {
+    width: 10%;
 }
 
-#aboutme p {
-    padding: 20px 5vw;
-    font-size: 1.5rem;
+.carousel .carousel-control-prev-icon, .carousel .carousel-control-next-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.carousel-multi-item .carousel-indicators li {
+    background-color: #142e51 !important;
 }
 
 footer {
