@@ -217,32 +217,24 @@ footer p {
 
 @media screen and (max-width: 1600px) {
     html {
-        font-size: 10pt;
+        font-size: 12pt;
     }
 }
 
-@media screen and (max-width: 800px) {
-    header h1 {
-        float: none;
-        margin: 20px;
-    }
-    nav {
-        width: 100%;
-    }
+@media screen and (max-width: 1030px) {
     #profile {
-        height: 85vh;
+        height: 95vh;
         padding-top: 10vh;
     }
     #profile img {
-        width: 50vw;
+        width: 23vw;
     }
     #profile h1 {
-        font-size: 20pt;
         width: 80vw;
         margin: auto;
     }
     #projects {
-        padding: 50px !important;
+        padding: 50px;
     }
     #proj-gallery {
         flex-wrap: wrap;
@@ -252,18 +244,58 @@ footer p {
         margin-bottom: 30px;
     }
     .preview img {
-        width: 70vw;
-    }
-    #projects, #aboutme, #contact {
-        padding-top: 15vh;
-    }
-    #aboutme {
-        padding: 0;
+        width: 30vw;
     }
     footer {
         padding: 45px 10px 20px 10px;
     }
     .col-12 {
         padding: 0px 2%;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    html {
+        font-size: 10pt;
+    }
+    
+    #profile h1 {
+        font-size: 20pt;
+    }
+    #profile p {
+        
+        font-size: 18pt;
+    }
+    #proj-gallery {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .preview {
+        margin-bottom: 30px;
+    }
+    .preview img {
+        width: 80vw;
+    }
+    footer {
+        padding: 45px 10px 20px 10px;
+    }
+    .col-12 {
+        padding: 0px 2%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #profile img {
+        width: 50vw;
+    }
+    #projects {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    a.social-icons {
+        margin: 15px;
     }
 }
