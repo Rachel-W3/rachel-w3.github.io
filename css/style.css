@@ -75,7 +75,7 @@ nav li{
 #profile {
     grid-area: profile;
     text-align: center;
-    height: 90vh;
+    height: 100vh;
     padding-top: 15vh;
     background-color: #8acfff;
     background: url('../images/blue-skies-background.png') no-repeat center center;
@@ -98,7 +98,7 @@ nav li{
 
 #profile p {
     font-size: 1.5em;
-    width: 90vw;
+    width: 30vw;
     margin: auto;
 }
 
