@@ -234,6 +234,9 @@ footer p {
         width: 80vw;
         margin: auto;
     }
+    #profile p {
+        width: 70vw;
+    }
     #projects {
         padding: 50px;
     }
@@ -259,12 +262,10 @@ footer p {
     html {
         font-size: 10pt;
     }
-    
     #profile h1 {
         font-size: 20pt;
     }
     #profile p {
-        
         font-size: 18pt;
     }
     #proj-gallery {
