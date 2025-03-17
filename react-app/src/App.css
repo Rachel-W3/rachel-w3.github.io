@@ -45,6 +45,7 @@ body {
 
 #name {
   font-size: 2em !important;
+  font-weight: normal !important;
   padding: 10px;
 }
 
