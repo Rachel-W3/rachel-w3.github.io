@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 15pt;
+}
+
+.font-override {
+    font-family: 'Raleway', sans-serif;
+    background-color: #142e51;
+    color: #f4f9ff;
+}
+
+#name {
+    font-size: 2em !important;
+    padding: 10px;
+}
+
+#projects {
+    padding: 5vw;
+}
+
+#projects {
+    background-color: #afceff;
+    color: #142e51;
+}
+
+#projects h1 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.preview img {
+    width: 25vw;
+    margin-bottom: 40px;
+}
+
+.preview h2 {
+    margin: 20px 0px;
+}
+
+.mb-2 {
+    margin-bottom: -3em !important;
+}
+
+.col-12 {
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+}
+
+footer {
+    text-align: center;
+}
+
+a.social-icons {
+    margin: 20px;
+}
+
+#profile {
+    grid-area: profile;
+    text-align: center;
+    height: 100vh;
+    padding-top: 15vh;
+    background-color: #8acfff;
+    background: url('../images/blue-skies-background.png') no-repeat center center;
+    background-size: cover;
+}
+
+#profile img {
+    width: 15vw;
+    border: 0.8vw solid #fffc;
+    border-radius: 50%;
+    margin: 2em;
+}
+
+#profile h1 {
+    text-transform: none;
+    font-size: 2.5em;
+    width: 40vw;
+    margin: auto;
+}
+
+#profile p {
+    font-size: 1.5em;
+    width: 30vw;
+    margin: auto;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: 10%;
+    scale: 3;
+}
+
+/* .carousel .carousel-control-prev-icon, .carousel .carousel-control-next-icon {
+    width: 50px;
+    height: 50px;
+} */
+
+.carousel-multi-item .carousel-indicators li {
+    background-color: #142e51 !important;
+}
+
+footer {
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 40px 0px 20px 0px;
+}
+
+footer p {
+    padding: 20px;
+    margin-bottom: 0 !important;
+}
+
+.social-icons {
+    color: #f4f9ff;
+}
+
+.social-icons:focus, .social-icons:hover, .social-icons:active {
+    color: #8aafff !important;
+    transition: 0.3s;
+}
+
+.hovereffect {
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+}
+  
+.hovereffect .overlay {
+    position: absolute;
+    overflow: hidden;
+    width: 80%;
+    height: 80%;
+    left: 10%;
+    top: 10%;
+    border-bottom: 1px solid #FFF;
+    border-top: 1px solid #FFF;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(0,1);
+    -ms-transform: scale(0,1);
+    transform: scale(0,1);
+}
+  
+.hovereffect:hover .overlay {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+  
+.hovereffect img {
+    display: block;
+    position: relative;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+}
+  
+.hovereffect:hover img {
+    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+    filter: brightness(0.6);
+    -webkit-filter: brightness(0.6);
+}
+  
+.hovereffect h2 {
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    font-size: 1.5em;
+    background-color: transparent;
+    color: #FFF;
+    padding: 1em 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(0,-100%,0);
+    transform: translate3d(0,-100%,0);
+}
+  
+.hovereffect a, .hovereffect p {
+    color: #FFF;
+    padding: 1em 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(0,100%,0);
+    transform: translate3d(0,100%,0);
+}
+  
+.hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h2 {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+@media screen and (max-width: 1600px) {
+    html {
+        font-size: 12pt;
+    }
+}
+
+@media screen and (max-width: 1030px) {
+    #profile {
+        height: 95vh;
+        padding-top: 10vh;
+    }
+    #profile img {
+        width: 23vw;
+    }
+    #profile h1 {
+        width: 80vw;
+        margin: auto;
+    }
+    #profile p {
+        width: 70vw;
+    }
+    #projects {
+        padding: 50px;
+    }
+    #proj-gallery {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .preview {
+        margin-bottom: 30px;
+    }
+    .preview img {
+        width: 30vw;
+    }
+    footer {
+        padding: 45px 10px 20px 10px;
+    }
+    .col-12 {
+        padding: 0px 2%;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    html {
+        font-size: 10pt;
+    }
+    #profile h1 {
+        font-size: 20pt;
+    }
+    #profile p {
+        font-size: 18pt;
+    }
+    #proj-gallery {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .preview {
+        margin-bottom: 30px;
+    }
+    .preview img {
+        width: 80vw;
+    }
+    footer {
+        padding: 45px 10px 20px 10px;
+    }
+    .col-12 {
+        padding: 0px 2%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #profile img {
+        width: 50vw;
+    }
+    #projects {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    a.social-icons {
+        margin: 15px;
+    }
+}
