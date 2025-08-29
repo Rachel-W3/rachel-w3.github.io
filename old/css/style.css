@@ -58,20 +58,6 @@ a.social-icons {
     margin: 20px;
 }
 
-nav li{
-    margin: 0 20px;
-    font-size: 1.5rem; 
-}
-
-.nav-color-override:link, .nav-color-override:visited {
-    color: #f4f9ff !important;
-}
-
-.nav-color-override:focus, .nav-color-override:hover, .nav-color-override:active {
-    color: #8aafff !important;
-    transition: color 0.3s;
-}
-
 #profile {
     grid-area: profile;
     text-align: center;
