@@ -5,6 +5,7 @@
 
 html {
     font-size: 15pt;
+    overflow-x: hidden;
 }
 
 .font-override {
@@ -18,16 +19,16 @@ html {
     padding: 10px;
 }
 
-#projects {
+#projects, #released-games {
     padding: 5vw;
 }
 
-#projects {
+#projects, #released-games {
     background-color: #afceff;
     color: #142e51;
 }
 
-#projects h1 {
+#projects h1, #released-games h1 {
     text-align: center;
     padding-bottom: 20px;
 }
@@ -52,6 +53,7 @@ html {
 
 footer {
     text-align: center;
+    overflow: hidden;
 }
 
 a.social-icons {
@@ -124,7 +126,6 @@ footer {
 
 footer p {
     padding: 20px;
-    margin-bottom: 0 !important;
 }
 
 .social-icons {
@@ -174,6 +175,7 @@ footer p {
     position: relative;
     -webkit-transition: all 0.35s;
     transition: all 0.35s;
+    max-width: 100%;
 }
   
 .hovereffect:hover img {
@@ -237,7 +239,7 @@ footer p {
     #profile p {
         width: 70vw;
     }
-    #projects {
+    #projects, #released-games {
         padding: 50px;
     }
     #proj-gallery {
@@ -290,7 +292,7 @@ footer p {
     #profile img {
         width: 50vw;
     }
-    #projects {
+    #projects, #released-games {
         padding-left: 30px;
         padding-right: 30px;
     }
