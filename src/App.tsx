@@ -4,7 +4,7 @@ import { ProjectGrid } from './components/ProjectGrid';
 import { projects } from './data/projects';
 import { releasedGames } from './data/releasedGames';
 
-const RESUME_URL = '/downloadable/July2025_WongRachel_Resume.pdf';
+const RESUME_URL = '/downloadable/2026_WongRachel_Resume.pdf';
 
 export function App() {
   return (
