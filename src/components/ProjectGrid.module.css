@@ -1,0 +1,22 @@
+.section {
+  padding: clamp(2rem, 4vw, 3rem) clamp(1.25rem, 3vw, 2.5rem);
+  color: var(--color-text);
+}
+
+.section + .section {
+  border-top: 1px solid var(--color-line);
+}
+
+.heading {
+  margin: 0 0 1.25rem;
+  font-size: clamp(1.4rem, 2.2vw, 1.9rem);
+  font-weight: 700;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 140px), 1fr));
+  gap: clamp(0.75rem, 1.2vw, 1.1rem);
+  margin: 0;
+  padding: 0;
+}

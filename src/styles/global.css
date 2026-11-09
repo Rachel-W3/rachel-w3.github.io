@@ -1,0 +1,76 @@
+:root {
+  /* Dark purple palette */
+  --color-text: #ece6f7;          /* soft off-white text */
+  --color-bg: #0e0719;            /* base behind the gradients */
+  --color-line: rgb(214 200 236 / 0.12);  /* dividers, borders */
+  --color-accent: #7a5cc4;        /* buttons, card fallback */
+  --color-accent-hover: #8d6fd6;  /* button hover */
+  --color-accent-soft: #c9b4f2;   /* link hover, focus outlines */
+  --color-white: #fdfbff;
+  --shadow-rgb: 8 4 18;
+  --radius: 10px;
+
+  font-family: 'Raleway', system-ui, sans-serif;
+  line-height: 1.5;
+  color: var(--color-text);
+  background: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/*
+ * Silk & velvet backdrop, pinned to the viewport (a fixed layer instead of
+ * background-attachment: fixed, which janks on mobile). Layers, top to bottom:
+ *   1. velvet vignette - edges sink into near-black plum, like pile catching shadow
+ *   2. silk sheen      - two soft diagonal highlight bands, like light across satin
+ *   3. glow            - one warm orchid bloom top-left, one cool violet bottom-right
+ *   4. base            - deep plum diagonal
+ */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 120% 90% at 50% 45%, transparent 50%, rgb(5 2 10 / 0.85) 100%),
+    linear-gradient(
+      125deg,
+      transparent 18%,
+      rgb(196 160 255 / 0.05) 30%,
+      rgb(230 205 255 / 0.08) 36%,
+      rgb(196 160 255 / 0.04) 42%,
+      transparent 54%,
+      rgb(180 130 240 / 0.035) 66%,
+      rgb(215 180 255 / 0.055) 71%,
+      transparent 80%
+    ),
+    radial-gradient(ellipse 70% 55% at 15% 10%, rgb(150 85 200 / 0.22), transparent 70%),
+    radial-gradient(ellipse 75% 60% at 90% 95%, rgb(85 45 170 / 0.25), transparent 70%),
+    linear-gradient(135deg, #160b26 0%, #10071d 40%, #0b0515 70%, #120a21 100%);
+}
+
+img {
+  max-width: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

@@ -1,0 +1,15 @@
+.layout {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 900px) {
+  .layout {
+    grid-template-columns: minmax(220px, 20%) 1fr;
+  }
+}
+
+.content {
+  min-width: 0;
+  background: transparent;
+}
