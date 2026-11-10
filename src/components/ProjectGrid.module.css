@@ -20,3 +20,28 @@
   margin: 0;
   padding: 0;
 }
+
+/* Tablets: larger cards. */
+@media (min-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 180px), 1fr));
+    gap: 1.1rem;
+  }
+}
+
+/* Desktop & large monitors: card size and spacing grow with the viewport. */
+@media (min-width: 900px) {
+  .section {
+    padding: clamp(2.5rem, 3vw, 4rem) clamp(1.5rem, 3vw, 4rem);
+  }
+
+  .heading {
+    margin-bottom: clamp(1.25rem, 1.5vw, 2rem);
+    font-size: clamp(1.6rem, 2vw, 2.6rem);
+  }
+
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, clamp(180px, 13vw, 320px)), 1fr));
+    gap: clamp(1rem, 1.3vw, 1.75rem);
+  }
+}

@@ -95,3 +95,56 @@
     transition: none;
   }
 }
+
+/* Tablets: hero spans the full width above the projects, so give it more presence. */
+@media (min-width: 600px) {
+  .hero {
+    gap: 1.1rem;
+  }
+
+  .photo {
+    width: 160px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .tagline {
+    font-size: 1.15rem;
+  }
+
+  .resumeButton {
+    padding: 0.55rem 1.35rem;
+    font-size: 0.95rem;
+  }
+}
+
+/* Desktop & large monitors: hero is a sidebar (20% wide), so scale with viewport width. */
+@media (min-width: 900px) {
+  .hero {
+    gap: clamp(0.9rem, 1.2vw, 1.75rem);
+    padding: clamp(2rem, 2.5vw, 3.5rem) clamp(1.25rem, 2vw, 3rem);
+  }
+
+  .photo {
+    width: clamp(120px, 11vw, 260px);
+  }
+
+  .title {
+    font-size: clamp(1.5rem, 2vw, 2.6rem);
+  }
+
+  .tagline {
+    font-size: clamp(1rem, 1.1vw, 1.4rem);
+  }
+
+  .actions {
+    gap: clamp(0.9rem, 1vw, 1.4rem);
+  }
+
+  .resumeButton {
+    padding: clamp(0.5rem, 0.6vw, 0.8rem) clamp(1.2rem, 1.4vw, 1.9rem);
+    font-size: clamp(0.85rem, 0.9vw, 1.15rem);
+  }
+}

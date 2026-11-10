@@ -148,3 +148,46 @@
     transition: none;
   }
 }
+
+/* Scale card text with the larger cards on tablets and up. */
+@media (min-width: 600px) {
+  .fallback {
+    font-size: 1.05rem;
+  }
+
+  .title {
+    font-size: 0.95rem;
+  }
+
+  .note {
+    font-size: 0.8rem;
+  }
+
+  .cta {
+    font-size: 0.72rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .overlay {
+    gap: clamp(0.3rem, 0.4vw, 0.6rem);
+  }
+
+  .fallback {
+    padding: clamp(0.75rem, 1vw, 1.5rem);
+    font-size: clamp(1rem, 1.1vw, 1.5rem);
+  }
+
+  .title {
+    font-size: clamp(0.9rem, 1vw, 1.35rem);
+  }
+
+  .note {
+    font-size: clamp(0.75rem, 0.8vw, 1.05rem);
+  }
+
+  .cta {
+    padding: clamp(0.2rem, 0.3vw, 0.4rem) clamp(0.6rem, 0.8vw, 1.1rem);
+    font-size: clamp(0.68rem, 0.7vw, 0.95rem);
+  }
+}
